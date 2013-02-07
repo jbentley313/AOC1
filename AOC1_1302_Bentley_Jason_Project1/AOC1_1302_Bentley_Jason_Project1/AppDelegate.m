@@ -22,6 +22,17 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    //create a float
+    float beachTemp = 73.2f;
+    //Cast float to Int
+    int intBeachTemp = (int) beachTemp;
+    //Write log output with Float and Int
+    NSLog(@"The current temperature at the beach is %.1f degrees. Since the temp is basically %d degrees, I'll see if my family wants to go!", beachTemp, intBeachTemp);
+    //create BOOL
+    BOOL isSunny = YES;
+    //
+
     return YES;
 }
 
@@ -45,7 +56,7 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    NSLog12(@"hello World!");
+
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
