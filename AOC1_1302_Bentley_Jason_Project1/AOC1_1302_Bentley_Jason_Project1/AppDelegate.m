@@ -29,10 +29,17 @@
     int intBeachTemp = (int) beachTemp;
     //Write log output with Float and Int
     NSLog(@"The current temperature at the beach is %.1f degrees. Since the temp is basically %d degrees, I'll see if my family wants to go!", beachTemp, intBeachTemp);
-    //create BOOL
-    BOOL isSunny = YES;
+    //And,OR Comparison & if, else if, and else
+    BOOL isSunny = NO;
+    BOOL isWeekDay = NO;
+    int schoolProjectsDue = 1;
+    if (((isWeekDay == NO) && (beachTemp > 89.9f)) || (schoolProjectsDue > 1)) {
+        NSLog(@"Looks like today isn't the best day to go to the beach.");
+    }
+    else if (isSunny == NO) {
+        NSLog(@"Too bad it's the weekend with no school projects due and it's not sunny outside!");
+    }
     //
-
     return YES;
 }
 
