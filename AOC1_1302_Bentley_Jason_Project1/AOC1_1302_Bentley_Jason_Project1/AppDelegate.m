@@ -30,7 +30,7 @@
     //Write log output with Float and Int
     NSLog(@"The current temperature at the beach is %.1f degrees. Since the temp is basically %d degrees, I'll see if my family wants to go!", beachTemp, intBeachTemp);
     //And,OR Comparison & if, else if, and else
-    BOOL isSunny = NO;
+    BOOL isSunny = YES;
     BOOL isWeekDay = NO;
     int schoolProjectsDue = 1;
     if (((isWeekDay == NO) && (beachTemp > 89.9f)) || (schoolProjectsDue > 1)) {
@@ -39,7 +39,15 @@
     else if (isSunny == NO) {
         NSLog(@"Too bad it's the weekend with no school projects due and it's not sunny outside!");
     }
-    //
+    else {
+        NSLog(@"It looks like it's a go for the beach!");
+    }
+    //Single Loop
+    NSLog(@"My daughter is ready to race to the car with her beach toys. She always counts to 12!");
+    for (int x=1; x <= 12; x++) {
+        NSLog(@"Counting %d!", x);
+    }
+    
     return YES;
 }
 
