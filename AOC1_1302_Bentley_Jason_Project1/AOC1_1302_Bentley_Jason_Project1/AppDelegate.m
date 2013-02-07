@@ -43,10 +43,19 @@
         NSLog(@"It looks like it's a go for the beach!");
     }
     //Single Loop
-    NSLog(@"My daughter is ready to race to the car with her beach toys. She always counts to 12!");
-    for (int x=1; x <= 12; x++) {
+    NSLog(@"My daughter is ready to race to the car with her beach toys. She always counts to 12. Ready, GO!");
+    for (int x = 1; x <= 12; x++) {
         NSLog(@"Counting %d!", x);
     }
+    //Nested Loop
+    NSLog(@"She now will spot 2 red cars for every mile. We live ten miles away from the beach.");
+    for (int x = 0; x <= 10; x++) {
+        NSLog(@"Mile %d", x);
+        for (int i = 1; i < 3; i++) {
+            NSLog(@"I spot red car #%d!", i);
+        }
+    }
+    //While Loop
     
     return YES;
 }
