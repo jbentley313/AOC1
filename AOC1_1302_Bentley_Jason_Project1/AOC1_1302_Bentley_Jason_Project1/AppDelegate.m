@@ -23,16 +23,21 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    //create a float
+    //Create a float
     float beachTemp = 73.2f;
+    
     //Cast float to Int
     int intBeachTemp = (int) beachTemp;
+    
     //Write log output with Float and Int
     NSLog(@"The current temperature at the beach is %.1f degrees. Since the temp is basically %d degrees, I'll see if my family wants to go!", beachTemp, intBeachTemp);
-    //And,OR Comparison & if, else if, and else
+    
+    //Variables for comparison 
     BOOL isSunny = YES;
     BOOL isWeekDay = NO;
     int schoolProjectsDue = 1;
+    
+    //Comparison of float, Int and BOOL val 
     if (((isWeekDay == NO) && (beachTemp > 89.9f)) || (schoolProjectsDue > 1)) {
         NSLog(@"Looks like today isn't the best day to go to the beach.");
     }
@@ -42,20 +47,29 @@
     else {
         NSLog(@"It looks like it's a go for the beach!");
     }
+    
     //Single Loop
     NSLog(@"My daughter is ready to race to the car with her beach toys. She always counts to 12. Ready, GO!");
     for (int x = 1; x <= 12; x++) {
         NSLog(@"Counting %d!", x);
     }
+    
     //Nested Loop
     NSLog(@"She now will spot 2 red cars for every mile. We live ten miles away from the beach.");
-    for (int x = 0; x <= 10; x++) {
+    for (int x = 1; x <= 10; x++) {
         NSLog(@"Mile %d", x);
         for (int i = 1; i < 3; i++) {
             NSLog(@"I spot red car #%d!", i);
         }
     }
     //While Loop
+    int hour = 1;
+    while (hour <= 5) {
+        NSLog(@"We have %d hours left to enjoy the sun.", 6 - hour);
+        hour ++;
+    }
+    //Print out string for end of story
+    NSLog(@"We are out of time.  Time to load up the car and go home.");
     
     return YES;
 }
