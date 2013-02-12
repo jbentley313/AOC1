@@ -25,12 +25,13 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     //Create Title Label
-    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 10, 775.f, 30.f)];
-  
+    titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 10, 775.f, 30.f)];
+    if (titleLabel != nil)
+    {
         titleLabel.backgroundColor = [UIColor blueColor];
         titleLabel.text = @"The Hatchet";
         titleLabel.textAlignment = NSTextAlignmentCenter;
-    
+    }
     
     
     [self.view addSubview:titleLabel];

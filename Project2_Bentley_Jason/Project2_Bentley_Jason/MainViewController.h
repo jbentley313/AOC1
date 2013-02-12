@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface MainViewController : UIViewController
+{
+    UILabel *titleLabel;
+}
 
 @end

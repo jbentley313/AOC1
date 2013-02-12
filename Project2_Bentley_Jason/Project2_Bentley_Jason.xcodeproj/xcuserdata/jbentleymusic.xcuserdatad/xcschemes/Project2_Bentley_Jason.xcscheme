@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BB5311B616C9C34200180B53"
-               BuildableName = "Project2.app"
-               BlueprintName = "Project2"
-               ReferencedContainer = "container:Project2.xcodeproj">
+               BlueprintIdentifier = "BB5311E516C9C40100180B53"
+               BuildableName = "Project2_Bentley_Jason.app"
+               BlueprintName = "Project2_Bentley_Jason"
+               ReferencedContainer = "container:Project2_Bentley_Jason.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BB5311B616C9C34200180B53"
-            BuildableName = "Project2.app"
-            BlueprintName = "Project2"
-            ReferencedContainer = "container:Project2.xcodeproj">
+            BlueprintIdentifier = "BB5311E516C9C40100180B53"
+            BuildableName = "Project2_Bentley_Jason.app"
+            BlueprintName = "Project2_Bentley_Jason"
+            ReferencedContainer = "container:Project2_Bentley_Jason.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -51,10 +51,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BB5311B616C9C34200180B53"
-            BuildableName = "Project2.app"
-            BlueprintName = "Project2"
-            ReferencedContainer = "container:Project2.xcodeproj">
+            BlueprintIdentifier = "BB5311E516C9C40100180B53"
+            BuildableName = "Project2_Bentley_Jason.app"
+            BlueprintName = "Project2_Bentley_Jason"
+            ReferencedContainer = "container:Project2_Bentley_Jason.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -69,10 +69,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BB5311B616C9C34200180B53"
-            BuildableName = "Project2.app"
-            BlueprintName = "Project2"
-            ReferencedContainer = "container:Project2.xcodeproj">
+            BlueprintIdentifier = "BB5311E516C9C40100180B53"
+            BuildableName = "Project2_Bentley_Jason.app"
+            BlueprintName = "Project2_Bentley_Jason"
+            ReferencedContainer = "container:Project2_Bentley_Jason.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
