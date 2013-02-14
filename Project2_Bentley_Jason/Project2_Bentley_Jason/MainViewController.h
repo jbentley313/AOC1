@@ -11,6 +11,10 @@
 @interface MainViewController : UIViewController
 {
     UILabel *titleLabel;
+    UILabel *authorLabel;
+    UILabel *authorTextLabel;
+    UILabel *publishedLabel;
+    UILabel *publishedTextLabel;
 }
 
 @end
