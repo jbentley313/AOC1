@@ -110,6 +110,9 @@
     [self.view addSubview:summaryTextLabel];
     
     //NSArray of 5 items
+    NSArray *itemArray = [[NSArray alloc] initWithObjects:@"hatchet", @"plane", @"radio", @"pilot", @"fire wood", nil];
+    
+    //
     
     
     [super viewWillAppear:animated];
