@@ -101,13 +101,16 @@
     if (summaryTextLabel != nil)
     {
         summaryTextLabel.backgroundColor = [UIColor yellowColor];
-        summaryTextLabel.numberOfLines = 0;
-        summaryTextLabel.text = @"A boy is flying in a small plane when the pilot has a heart attack. He crashes into a river.\nOnly left with a hatchet and an emergency radio, he survives his ordeal\nby hunting, making shelter, and making fire.";
+        summaryTextLabel.numberOfLines = 3;
+        summaryTextLabel.text = @"A boy is flying in a small plane in Northern Canada when the pilot has a heart attack. He tries to land the plane, but crashes into a river. Left with only a hatchet and an emergency radio, he survives his ordeal by hunting, making shelter, and making fire.";
         summaryTextLabel.textAlignment = NSTextAlignmentCenter;
     }
     
     //Create Subview for Summary Text Label
     [self.view addSubview:summaryTextLabel];
+    
+    //NSArray of 5 items
+    
     
     [super viewWillAppear:animated];
 }
