@@ -25,7 +25,7 @@
     self.view.backgroundColor = [UIColor blackColor];
     
     //Create Title Label
-    titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 775.f, 30.f)];
+    titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 768.f, 30.f)];
     if (titleLabel != nil)
     {
         titleLabel.backgroundColor = [UIColor blueColor];
@@ -37,7 +37,7 @@
     [self.view addSubview:titleLabel];
     
     //Create Author Label
-    authorLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 40, 310.f, 30.f)];
+    authorLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 40, 210.f, 30.f)];
     if (authorLabel != nil)
     {
         authorLabel.backgroundColor = [UIColor whiteColor];
@@ -49,7 +49,7 @@
     [self.view addSubview:authorLabel];
     
     //Create Author Text Label
-    authorTextLabel = [[UILabel alloc] initWithFrame:CGRectMake(310, 40, 465.f, 30.f)];
+    authorTextLabel = [[UILabel alloc] initWithFrame:CGRectMake(210, 40, 558.f, 30.f)];
     if (authorTextLabel != nil)
     {
         authorTextLabel.backgroundColor = [UIColor yellowColor];
@@ -61,7 +61,7 @@
     [self.view addSubview:authorTextLabel];
     
     //Create Published Label
-    publishedLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 80, 310.f, 30.f)];
+    publishedLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 80, 210.f, 30.f)];
     if (publishedLabel != nil)
     {
         publishedLabel.backgroundColor = [UIColor whiteColor];
@@ -73,7 +73,7 @@
     [self.view addSubview:publishedLabel];
     
     //Create Published Text Label
-    publishedTextLabel = [[UILabel alloc] initWithFrame:CGRectMake(310, 80, 465.f, 30.f)];
+    publishedTextLabel = [[UILabel alloc] initWithFrame:CGRectMake(210, 80, 558.f, 30.f)];
     if (publishedTextLabel != nil)
     {
         publishedTextLabel.backgroundColor = [UIColor yellowColor];
@@ -81,8 +81,33 @@
         publishedTextLabel.textAlignment = NSTextAlignmentLeft;
     }
     
-    //Create Subview for Author Text
+    //Create Subview for Published Text
     [self.view addSubview:publishedTextLabel];
+    
+    //Create Summary Label
+    summaryLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 120, 110.f, 30.f)];
+    if (summaryLabel != nil)
+    {
+        summaryLabel.backgroundColor = [UIColor whiteColor];
+        summaryLabel.text = @"Summary:";
+        summaryLabel.textAlignment = NSTextAlignmentLeft;
+    }
+    
+    //Create Subview for Summary Label
+    [self.view addSubview:summaryLabel];
+    
+    //Create Summary Text Label
+    summaryTextLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 160, 768.f, 100.f)];
+    if (summaryTextLabel != nil)
+    {
+        summaryTextLabel.backgroundColor = [UIColor yellowColor];
+        summaryTextLabel.numberOfLines = 0;
+        summaryTextLabel.text = @"A boy is flying in a small plane when the pilot has a heart attack. He crashes into a river.\nOnly left with a hatchet and an emergency radio, he survives his ordeal\nby hunting, making shelter, and making fire.";
+        summaryTextLabel.textAlignment = NSTextAlignmentCenter;
+    }
+    
+    //Create Subview for Summary Text Label
+    [self.view addSubview:summaryTextLabel];
     
     [super viewWillAppear:animated];
 }

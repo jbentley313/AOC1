@@ -15,6 +15,8 @@
     UILabel *authorTextLabel;
     UILabel *publishedLabel;
     UILabel *publishedTextLabel;
+    UILabel *summaryLabel;
+    UILabel *summaryTextLabel;
 }
 
 @end
