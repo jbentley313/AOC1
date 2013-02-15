@@ -17,6 +17,8 @@
     UILabel *publishedTextLabel;
     UILabel *summaryLabel;
     UILabel *summaryTextLabel;
+    UILabel *listLabel;
+    UILabel *muteLabel;
 }
 
 @end

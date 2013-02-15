@@ -109,11 +109,47 @@
     //Create Subview for Summary Text Label
     [self.view addSubview:summaryTextLabel];
     
-    //NSArray of 5 items
-    NSArray *itemArray = [[NSArray alloc] initWithObjects:@"hatchet", @"plane", @"radio", @"pilot", @"fire wood", nil];
+    //NSString
+    NSString *itemString[] = {@"hatchet", @"plane", @"radio", @"pilot", @"firewood"};
     
-    //
+    //NSArray
+    NSArray *arrayFromStrings  = [NSArray arrayWithObjects : itemString count:5];
+                                
+    //NSMutable String
+    NSMutableString *itemMuteSrg = [[NSMutableString alloc] initWithCapacity : 5];
+    for (int j = 0; j < [arrayFromStrings count]; j++)
+    {
+        [itemMuteSrg appendString:[arrayFromStrings objectAtIndex : j]];
+    }
     
+    //Create ListofItems Label
+    listLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 270, 110.f, 30.f)];
+    if (listLabel != nil)
+    {
+        listLabel.backgroundColor = [UIColor whiteColor];
+        listLabel.text = @"List of Items:";
+        listLabel.textAlignment = NSTextAlignmentLeft;
+    }
+    
+    //Create Subview for listLabel
+    [self.view addSubview:listLabel];
+    
+    //Create Mute Label to display list
+    muteLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 310, 768.f, 100.f)];
+    if (muteLabel != nil)
+    {
+        muteLabel.backgroundColor = [UIColor whiteColor];
+        muteLabel.text = itemMuteSrg;
+        muteLabel.textAlignment = NSTextAlignmentCenter;
+    }
+    
+    //Create subview for muteLabel
+    [self.view addSubview:muteLabel];
+    
+    
+    
+    
+
     
     [super viewWillAppear:animated];
 }
