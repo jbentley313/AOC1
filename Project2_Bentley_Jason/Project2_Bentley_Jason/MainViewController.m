@@ -41,6 +41,7 @@
     if (authorLabel != nil)
     {
         authorLabel.backgroundColor = [UIColor whiteColor];
+        authorLabel.textColor = [UIColor purpleColor];
         authorLabel.text = @"Author:";
         authorLabel.textAlignment = NSTextAlignmentRight;
     }
@@ -53,6 +54,7 @@
     if (authorTextLabel != nil)
     {
         authorTextLabel.backgroundColor = [UIColor yellowColor];
+        authorTextLabel.textColor = [UIColor redColor];
         authorTextLabel.text = @"Gary Paulsen";
         authorTextLabel.textAlignment = NSTextAlignmentLeft;
     }
@@ -64,7 +66,8 @@
     publishedLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 80, 210.f, 30.f)];
     if (publishedLabel != nil)
     {
-        publishedLabel.backgroundColor = [UIColor whiteColor];
+        publishedLabel.backgroundColor = [UIColor orangeColor];
+        publishedLabel.textColor = [UIColor greenColor];
         publishedLabel.text = @"Published:";
         publishedLabel.textAlignment = NSTextAlignmentRight;
     }
@@ -76,7 +79,8 @@
     publishedTextLabel = [[UILabel alloc] initWithFrame:CGRectMake(210, 80, 558.f, 30.f)];
     if (publishedTextLabel != nil)
     {
-        publishedTextLabel.backgroundColor = [UIColor yellowColor];
+        publishedTextLabel.backgroundColor = [UIColor lightGrayColor];
+        publishedTextLabel.textColor = [UIColor magentaColor];
         publishedTextLabel.text = @"September 30th, 1987";
         publishedTextLabel.textAlignment = NSTextAlignmentLeft;
     }
@@ -88,7 +92,8 @@
     summaryLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 120, 110.f, 30.f)];
     if (summaryLabel != nil)
     {
-        summaryLabel.backgroundColor = [UIColor whiteColor];
+        summaryLabel.backgroundColor = [UIColor brownColor];
+        summaryLabel.textColor = [UIColor cyanColor];
         summaryLabel.text = @"Summary:";
         summaryLabel.textAlignment = NSTextAlignmentLeft;
     }
@@ -100,7 +105,8 @@
     summaryTextLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 160, 768.f, 100.f)];
     if (summaryTextLabel != nil)
     {
-        summaryTextLabel.backgroundColor = [UIColor yellowColor];
+        summaryTextLabel.backgroundColor = [UIColor colorWithRed:0 green:0.8 blue:0 alpha:1]; /*#00cc00*/
+        summaryTextLabel.textColor = [UIColor colorWithRed:0.651 green:0 blue:0 alpha:1]; /*#a60000*/
         summaryTextLabel.numberOfLines = 3;
         summaryTextLabel.text = @"A boy is flying in a small plane in Northern Canada when the pilot has a heart attack. He tries to land the plane, but crashes into a river. Left with only a hatchet and an emergency radio, he survives his ordeal by hunting, making shelter, and making fire.";
         summaryTextLabel.textAlignment = NSTextAlignmentCenter;
@@ -117,16 +123,25 @@
                                 
     //NSMutable String
     NSMutableString *itemMuteSrg = [[NSMutableString alloc] initWithCapacity : 5];
+    //Loop thru array into M<utableString
     for (int j = 0; j < [arrayFromStrings count]; j++)
     {
         [itemMuteSrg appendString:[arrayFromStrings objectAtIndex : j]];
+        //add 'and' after index 3
+        if (j == 3) {
+            [itemMuteSrg appendFormat:@", and "];
+        //add ', ' after any index other than 4
+        }else if (j != 4) {
+            [itemMuteSrg appendFormat:@", "];
+        }
     }
     
     //Create ListofItems Label
     listLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 270, 110.f, 30.f)];
     if (listLabel != nil)
     {
-        listLabel.backgroundColor = [UIColor whiteColor];
+        listLabel.backgroundColor = [UIColor colorWithRed:1 green:0.251 blue:0.251 alpha:1]; /*#ff4040*/
+        listLabel.textColor = [UIColor colorWithRed:1 green:0.698 blue:0.451 alpha:1]; /*#ffb273*/
         listLabel.text = @"List of Items:";
         listLabel.textAlignment = NSTextAlignmentLeft;
     }
@@ -135,10 +150,11 @@
     [self.view addSubview:listLabel];
     
     //Create Mute Label to display list
-    muteLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 310, 768.f, 100.f)];
+    muteLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 310, 768.f, 50.f)];
     if (muteLabel != nil)
     {
-        muteLabel.backgroundColor = [UIColor whiteColor];
+        muteLabel.backgroundColor = [UIColor colorWithRed:1 green:0.451 blue:0.451 alpha:1]; /*#ff7373*/
+        muteLabel.textColor = [UIColor colorWithRed:0.522 green:0 blue:0.294 alpha:1]; /*#85004b*/
         muteLabel.text = itemMuteSrg;
         muteLabel.textAlignment = NSTextAlignmentCenter;
     }
