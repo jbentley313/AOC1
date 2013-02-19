@@ -23,7 +23,7 @@
 }
 -(NSInteger)Add:(NSInteger)num1 num2:(NSInteger)num2
 {
-    int valueAdded = (num1 + num2);
+    NSInteger valueAdded = (num1 + num2);
     
 }
 
