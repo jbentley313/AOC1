@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  project_3
+//  Project3_Bentley_Jason
 //
 //  Created by theOwner on 2/18/13.
 //  Copyright (c) 2013 theOwner. All rights reserved.
@@ -25,8 +25,7 @@
     // Override point for customization after application launch.
     self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
     
-    
-    
+    [self.viewController Add:2 num2:3];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

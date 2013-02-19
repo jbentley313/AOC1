@@ -1,6 +1,6 @@
 //
 //  ViewController.m
-//  AOC1 1302 project_3 Jason Bentley
+//  Project3_Bentley_Jason
 //
 //  Created by theOwner on 2/18/13.
 //  Copyright (c) 2013 theOwner. All rights reserved.
@@ -16,13 +16,17 @@
 
 - (void)viewDidLoad
 {
-
-- add:(NSInteger*)num1 num2(NSInteger)num2
-   
-    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    
 }
+-(NSInteger)Add:(NSInteger)num1 num2:(NSInteger)num2
+{
+    int valueAdded = (num1 + num2);
+    
+}
+
 
 - (void)didReceiveMemoryWarning
 {
