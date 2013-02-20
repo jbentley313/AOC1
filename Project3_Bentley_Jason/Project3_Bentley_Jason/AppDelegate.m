@@ -25,7 +25,8 @@
     // Override point for customization after application launch.
     self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
     
-    [self.viewController Add:2 num2:3];
+    
+//    [self.viewController Add:2 num2:3];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

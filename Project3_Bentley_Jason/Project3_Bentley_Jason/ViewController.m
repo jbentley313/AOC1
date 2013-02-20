@@ -14,18 +14,37 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    
-    
-}
+//Add Function
 -(NSInteger)Add:(NSInteger)num1 num2:(NSInteger)num2
 {
-    NSInteger valueAdded = (num1 + num2);
+    return  (num1 + num2);
     
 }
+
+//Bool function
+-(BOOL)Compare:(NSInteger)int1 int2:(NSInteger)int2
+{
+    if (int2 == int1) {
+        return YES;
+    }
+    else {
+        return NO;
+    }
+}
+
+//
+
+- (void)viewDidLoad
+{
+    [self Add:3 num2:3];
+//    [self Compare:1 num2:1];
+    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
+
+    
+}
+
+
 
 
 - (void)didReceiveMemoryWarning
