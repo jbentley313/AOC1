@@ -40,15 +40,29 @@
     return appendedString;
 }
 
-
+//DisplayAlertWithString Function
+-(void)DisplayAlertWithString:(NSString*)alert
+{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Hi!" message:alert delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+    [alertView show];
+}
 
 
 
 - (void)viewDidLoad
 {
-    [self Add:3 num2:3];
-    [self Append:@"hello" string2:@"I'm Jason"];
-//    [self Compare:1 num2:1];
+    //Call Append and return new string
+    NSString *message = [self Append:@"AOC1 1302 Project 2" string2:@" Jason Bentley"];
+    
+    //Display the new string
+    [self DisplayAlertWithString:(message)];
+    
+    //Add 2 NSIntegers and return
+    int addedIntVal = [self Add:13 num2:42];
+    
+    
+    
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 
