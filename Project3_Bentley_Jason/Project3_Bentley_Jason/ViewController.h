@@ -18,6 +18,7 @@
 
 -(NSInteger)Add:(NSInteger)num1 num2:(NSInteger)num2;
 -(BOOL)Compare:(NSInteger)int1 int2:(NSInteger)int2;
+-(NSString*)Append:(NSString*)string1 string2:(NSString*)string2;
 
 
 @end

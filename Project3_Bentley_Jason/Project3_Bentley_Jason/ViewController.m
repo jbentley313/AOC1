@@ -32,11 +32,22 @@
     }
 }
 
-//
+//Append Function
+-(NSString*)Append:(NSString*)string1 string2:(NSString*)string2
+{   //MutableString
+    NSMutableString *appendFun = [[NSMutableString alloc] initWithString:string1];
+    NSString *appendedString = [appendFun stringByAppendingString:string2];
+    return appendedString;
+}
+
+
+
+
 
 - (void)viewDidLoad
 {
     [self Add:3 num2:3];
+    [self Append:@"hello" string2:@"I'm Jason"];
 //    [self Compare:1 num2:1];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
