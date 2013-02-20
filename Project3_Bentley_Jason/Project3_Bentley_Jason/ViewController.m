@@ -60,7 +60,8 @@
 - (void)viewDidLoad
 {
     //Call Append and return new string
-    NSString *message = [self Append:@"AOC1 1302 Project 2" string2:@" Jason Bentley"];
+    NSString *message = [self Append:@"AOC1 1302 Project 3" string2:@" Jason Bentley"];
+    
     
     //Display the new string
     [self DisplayAlertWithString:message];
