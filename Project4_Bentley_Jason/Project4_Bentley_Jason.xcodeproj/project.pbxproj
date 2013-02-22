@@ -264,6 +264,7 @@
 				GCC_PREFIX_HEADER = "Project4_Bentley_Jason/Project4_Bentley_Jason-Prefix.pch";
 				INFOPLIST_FILE = "Project4_Bentley_Jason/Project4_Bentley_Jason-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -275,6 +276,7 @@
 				GCC_PREFIX_HEADER = "Project4_Bentley_Jason/Project4_Bentley_Jason-Prefix.pch";
 				INFOPLIST_FILE = "Project4_Bentley_Jason/Project4_Bentley_Jason-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -298,6 +300,7 @@
 				BBAD4D4E16D7F002009AC2CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
