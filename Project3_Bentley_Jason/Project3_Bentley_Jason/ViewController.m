@@ -1,5 +1,6 @@
 //
 //  ViewController.m
+//  AOC1 Term 1302 Project3 
 //  Project3_Bentley_Jason
 //
 //  Created by theOwner on 2/18/13.
@@ -47,15 +48,7 @@
     if (alertViewMsg !=nil) {
         [alertViewMsg show];
     }
-
 }
-
-//
-
- 
-
-
-
 
 - (void)viewDidLoad
 {
