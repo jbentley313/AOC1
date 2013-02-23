@@ -48,7 +48,7 @@
         int count = usernameTextField.text.length;
         if (count == 0) {usernameDisplay.text = @"Please Enter Username";
             usernameDisplay.textAlignment = NSTextAlignmentCenter;
-            usernameDisplay.backgroundColor = [UIColor lightGrayColor];
+            usernameDisplay.backgroundColor = [UIColor colorWithRed:0.231 green:0.639 blue:0.816 alpha:1] /*#3ba3d0*/;
             usernameDisplay.numberOfLines = 0;
             [self.view addSubview:usernameDisplay];
         }
