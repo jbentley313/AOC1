@@ -77,12 +77,14 @@
     if (clickedButton.tag == 0) {
         int count = usernameTextField.text.length;
         if (count == 0) {
-            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Whoops!" message:@"Enter your username" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Whoops!" message:@"Please enter your username" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            usernameDisplay.text = @"Please Enter Username";
             [alertView show];
         } else {
             NSString *updatedUserText = usernameTextField.text;
             NSString *updatedDisplayText = [[NSString alloc] initWithFormat:@"User: %@ has been logged in", updatedUserText];
             usernameDisplay.text = updatedDisplayText;
+            usernameTextField.text = nil;
         }
     }
 }
