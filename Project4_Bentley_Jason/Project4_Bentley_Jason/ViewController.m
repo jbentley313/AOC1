@@ -41,32 +41,18 @@
         [self.view addSubview:button];
     }
     
-    //Extra Button
-//    button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-//    if (button != nil) {
-//        button.tag = 1;
-//        button.frame = CGRectMake(90.0f, 45.0f, 90.0f, 30.0f);
-//        [button setTitle:@"Login2" forState:UIControlStateNormal];
-//        [button addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
-//        [self.view addSubview:button];
-//    }
-    
+ 
     //Username display and info label
     usernameDisplay = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 85.0f, 320.0f, 75.0f)];
-    
-    
     if (usernameDisplay != nil) {
         int count = usernameTextField.text.length;
         if (count == 0) {usernameDisplay.text = @"Please Enter Username";
             usernameDisplay.textAlignment = NSTextAlignmentCenter;
             usernameDisplay.backgroundColor = [UIColor lightGrayColor];
+            usernameDisplay.numberOfLines = 0;
             [self.view addSubview:usernameDisplay];
         }
     }
-    
-    
-    
-    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
