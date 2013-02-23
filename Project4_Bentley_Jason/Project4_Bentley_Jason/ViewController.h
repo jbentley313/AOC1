@@ -14,7 +14,8 @@
     UILabel *username;
     UITextField *usernameTextField;
     UILabel *usernameDisplay;
-    UIButton *login;
+    UIButton *button;
+    
 }
 
 @end
