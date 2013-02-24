@@ -1,6 +1,7 @@
 //
 //  ViewController.m
 //  Project4_Bentley_Jason
+//  AOC1 Term 1302 Project4
 //
 //  Created by theOwner on 2/22/13.
 //  Copyright (c) 2013 theOwner. All rights reserved.
@@ -129,9 +130,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-//UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Whoops!" message:@"Enter your username" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
-//[alertView show];
-//
 
 @end

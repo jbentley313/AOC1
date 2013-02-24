@@ -1,7 +1,7 @@
 //
 //  AppDelegate.m
 //  Project4_Bentley_Jason
-//
+//  AOC1 Term 1302 Project4
 //  Created by theOwner on 2/22/13.
 //  Copyright (c) 2013 theOwner. All rights reserved.
 //
