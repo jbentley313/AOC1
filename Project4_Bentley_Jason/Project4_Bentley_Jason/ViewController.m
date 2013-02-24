@@ -56,7 +56,7 @@
     infoButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
     if (infoButton != nil) {
         infoButton.tag = 2;
-        infoButton.frame = CGRectMake(10.0f, 350.0f, 30.0f, 30.0f);
+        infoButton.frame = CGRectMake(0.0f, 350.0f, 30.0f, 30.0f);
         [infoButton addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:infoButton];
     }
@@ -94,6 +94,8 @@
             NSString *updatedDisplayText = [[NSString alloc] initWithFormat:@"User: %@ has been logged in", updatedUserText];
             usernameDisplay.text = updatedDisplayText;
             usernameTextField.text = nil;
+            //hide keyboard after click
+            [usernameTextField resignFirstResponder];
         }
     //Date btn events
     } else if (clickedButton.tag == 1) {
