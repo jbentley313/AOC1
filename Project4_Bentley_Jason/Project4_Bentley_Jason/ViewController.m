@@ -94,8 +94,8 @@
         if (count == 0) {
             usernameDisplay.text = @"Username cannot be empty";
         } else {
-            NSString *updatedUserText = usernameTextField.text;
-            NSString *updatedDisplayText = [[NSString alloc] initWithFormat:@"User: %@ has been logged in", updatedUserText];
+            updatedUserText = usernameTextField.text;
+            updatedDisplayText = [[NSString alloc] initWithFormat:@"User: %@ has been logged in", updatedUserText];
             usernameDisplay.text = updatedDisplayText;
             usernameTextField.text = nil;
             //hide keyboard after click
@@ -103,8 +103,8 @@
         }
     //Date btn events
     } else if (clickedButton.tag == DateButton) {
-        NSDate *date = [NSDate date];
-        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        date = [NSDate date];
+        dateFormatter = [[NSDateFormatter alloc] init];
         if (dateFormatter != nil) {
             [dateFormatter setDateStyle:NSDateFormatterLongStyle];
             [dateFormatter setTimeStyle:NSDateFormatterFullStyle];
@@ -116,7 +116,7 @@
     } else if (clickedButton.tag == InfoButton) {
         int infoCount = infoDisplay.text.length;
         if (infoCount == 0) {
-            NSString *updatedInfoText = [[NSString alloc] initWithFormat:@"This application was created by: Jason Bentley"];
+            updatedInfoText = [[NSString alloc] initWithFormat:@"This application was created by: Jason Bentley"];
             infoDisplay.text = updatedInfoText;
         } else {
             infoDisplay.text = nil;

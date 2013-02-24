@@ -19,6 +19,12 @@
     NSString *dateText;
     UIButton *infoButton;
     UILabel *infoDisplay;
+    NSString *updatedUserText;
+    NSString *updatedDisplayText;
+    NSDate *date;
+    NSDateFormatter *dateFormatter;
+    NSString *updatedInfoText;
+    
     
     
 }
