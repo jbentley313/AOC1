@@ -52,6 +52,15 @@
         [self.view addSubview:dateButton];
     }
     
+    //Info Button
+    infoButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
+    if (infoButton != nil) {
+        infoButton.tag = 2;
+        infoButton.frame = CGRectMake(10.0f, 350.0f, 30.0f, 30.0f);
+        [infoButton addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:infoButton];
+    }
+    
  
     //Username display and info label
     usernameDisplay = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 85.0f, 320.0f, 75.0f)];
@@ -63,6 +72,11 @@
             [self.view addSubview:usernameDisplay];
         
     }
+    
+    //UILabel for info
+    infoDisplay = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 380.0f, 320.0f, 75.0f)];
+    infoDisplay.numberOfLines = 0;
+    [self.view addSubview:infoDisplay];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -70,6 +84,7 @@
 //Click events
 - (void)onClick:(UIButton*)clickedButton
 {
+    //Login btn events
     if (clickedButton.tag == 0) {
         int count = usernameTextField.text.length;
         if (count == 0) {
@@ -80,6 +95,7 @@
             usernameDisplay.text = updatedDisplayText;
             usernameTextField.text = nil;
         }
+    //Date btn events
     } else if (clickedButton.tag == 1) {
         NSDate *date = [NSDate date];
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -89,6 +105,15 @@
             dateText = [dateFormatter stringFromDate:date];
             UIAlertView *dateAlert = [[UIAlertView alloc] initWithTitle:@"Date" message:dateText delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
             [dateAlert show];
+        }
+    //Info btn events toggle
+    } else if (clickedButton.tag == 2) {
+        int infoCount = infoDisplay.text.length;
+        if (infoCount == 0) {
+            NSString *updatedInfoText = [[NSString alloc] initWithFormat:@"This application was created by: Jason Bentley"];
+            infoDisplay.text = updatedInfoText;
+        } else {
+            infoDisplay.text = nil;
         }
     }
 }

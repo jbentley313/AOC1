@@ -17,6 +17,9 @@
     UIButton *logButton;
     UIButton *dateButton;
     NSString *dateText;
+    UIButton *infoButton;
+    UILabel *infoDisplay;
+    
     
 }
 
