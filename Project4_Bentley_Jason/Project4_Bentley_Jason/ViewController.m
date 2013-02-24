@@ -8,6 +8,10 @@
 
 #import "ViewController.h"
 
+#define LoginButton 0
+#define DateButton 1
+#define InfoButton 2
+
 @interface ViewController ()
 
 @end
@@ -34,7 +38,7 @@
     //Login Button
     logButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     if (logButton != nil) {
-        logButton.tag = 0;
+        logButton.tag = LoginButton;
         logButton.frame = CGRectMake(220.0f, 45.0f, 90.0f, 30.0f);
         [logButton setTitle:@"Login" forState:UIControlStateNormal];
         [logButton addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -44,7 +48,7 @@
     //Date Button
     dateButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     if (dateButton != nil) {
-        dateButton.tag = 1;
+        dateButton.tag = DateButton;
         dateButton.frame = CGRectMake(10.0f, 200.0f, 90.0f, 35.0f);
 //        [dateButton setBackgroundColor:[UIColor colorWithRed:0.027 green:0.447 blue:0.631 alpha:1]];
         [dateButton setTitle:@"Show Date" forState:UIControlStateNormal];
@@ -55,7 +59,7 @@
     //Info Button
     infoButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
     if (infoButton != nil) {
-        infoButton.tag = 2;
+        infoButton.tag = InfoButton;
         infoButton.frame = CGRectMake(0.0f, 350.0f, 30.0f, 30.0f);
         [infoButton addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:infoButton];
@@ -85,7 +89,7 @@
 - (void)onClick:(UIButton*)clickedButton
 {
     //Login btn events
-    if (clickedButton.tag == 0) {
+    if (clickedButton.tag == LoginButton) {
         int count = usernameTextField.text.length;
         if (count == 0) {
             usernameDisplay.text = @"Username cannot be empty";
@@ -98,7 +102,7 @@
             [usernameTextField resignFirstResponder];
         }
     //Date btn events
-    } else if (clickedButton.tag == 1) {
+    } else if (clickedButton.tag == DateButton) {
         NSDate *date = [NSDate date];
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         if (dateFormatter != nil) {
@@ -109,7 +113,7 @@
             [dateAlert show];
         }
     //Info btn events toggle
-    } else if (clickedButton.tag == 2) {
+    } else if (clickedButton.tag == InfoButton) {
         int infoCount = infoDisplay.text.length;
         if (infoCount == 0) {
             NSString *updatedInfoText = [[NSString alloc] initWithFormat:@"This application was created by: Jason Bentley"];
