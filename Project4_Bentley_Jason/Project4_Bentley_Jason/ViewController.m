@@ -84,8 +84,8 @@
         NSDate *date = [NSDate date];
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         if (dateFormatter != nil) {
-            [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
-            [dateFormatter setTimeStyle:NSDateFormatterShortStyle];
+            [dateFormatter setDateStyle:NSDateFormatterLongStyle];
+            [dateFormatter setTimeStyle:NSDateFormatterFullStyle];
             dateText = [dateFormatter stringFromDate:date];
             UIAlertView *dateAlert = [[UIAlertView alloc] initWithTitle:@"Date" message:dateText delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
             [dateAlert show];
