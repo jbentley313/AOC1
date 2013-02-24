@@ -14,7 +14,9 @@
     UILabel *username;
     UITextField *usernameTextField;
     UILabel *usernameDisplay;
-    UIButton *button;
+    UIButton *logButton;
+    UIButton *dateButton;
+    NSString *dateText;
     
 }
 

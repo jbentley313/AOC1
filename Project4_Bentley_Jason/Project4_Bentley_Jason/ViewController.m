@@ -32,26 +32,36 @@
     }
     
     //Login Button
-    button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    if (button != nil) {
-        button.tag = 0;
-        button.frame = CGRectMake(220.0f, 45.0f, 90.0f, 30.0f);
-        [button setTitle:@"Login" forState:UIControlStateNormal];
-        [button addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
-        [self.view addSubview:button];
+    logButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    if (logButton != nil) {
+        logButton.tag = 0;
+        logButton.frame = CGRectMake(220.0f, 45.0f, 90.0f, 30.0f);
+        [logButton setTitle:@"Login" forState:UIControlStateNormal];
+        [logButton addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:logButton];
+    }
+    
+    //Date Button
+    dateButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    if (dateButton != nil) {
+        dateButton.tag = 1;
+        dateButton.frame = CGRectMake(10.0f, 200.0f, 90.0f, 30.0f);
+//        [dateButton setBackgroundColor:[UIColor colorWithRed:0.027 green:0.447 blue:0.631 alpha:1]];
+        [dateButton setTitle:@"Show Date" forState:UIControlStateNormal];
+        [dateButton addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:dateButton];
     }
     
  
     //Username display and info label
     usernameDisplay = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 85.0f, 320.0f, 75.0f)];
     if (usernameDisplay != nil) {
-        int count = usernameTextField.text.length;
-        if (count == 0) {usernameDisplay.text = @"Please Enter Username";
+            usernameDisplay.text = @"Please Enter Username";
             usernameDisplay.textAlignment = NSTextAlignmentCenter;
             usernameDisplay.backgroundColor = [UIColor colorWithRed:0.231 green:0.639 blue:0.816 alpha:1] /*#3ba3d0*/;
             usernameDisplay.numberOfLines = 0;
             [self.view addSubview:usernameDisplay];
-        }
+        
     }
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -63,14 +73,22 @@
     if (clickedButton.tag == 0) {
         int count = usernameTextField.text.length;
         if (count == 0) {
-            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Whoops!" message:@"Please enter your username" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
-            usernameDisplay.text = @"Please Enter Username";
-            [alertView show];
+            usernameDisplay.text = @"Username cannot be empty";
         } else {
             NSString *updatedUserText = usernameTextField.text;
             NSString *updatedDisplayText = [[NSString alloc] initWithFormat:@"User: %@ has been logged in", updatedUserText];
             usernameDisplay.text = updatedDisplayText;
             usernameTextField.text = nil;
+        }
+    } else if (clickedButton.tag == 1) {
+        NSDate *date = [NSDate date];
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        if (dateFormatter != nil) {
+            [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+            [dateFormatter setTimeStyle:NSDateFormatterShortStyle];
+            dateText = [dateFormatter stringFromDate:date];
+            UIAlertView *dateAlert = [[UIAlertView alloc] initWithTitle:@"Date" message:dateText delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+            [dateAlert show];
         }
     }
 }
