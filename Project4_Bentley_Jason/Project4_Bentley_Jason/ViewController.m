@@ -109,7 +109,7 @@
             [dateFormatter setDateStyle:NSDateFormatterLongStyle];
             [dateFormatter setTimeStyle:NSDateFormatterFullStyle];
             dateText = [dateFormatter stringFromDate:date];
-            UIAlertView *dateAlert = [[UIAlertView alloc] initWithTitle:@"Date" message:dateText delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+            dateAlert = [[UIAlertView alloc] initWithTitle:@"Date" message:dateText delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
             [dateAlert show];
         }
     //Info btn events toggle

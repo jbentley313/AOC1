@@ -24,6 +24,7 @@
     NSDate *date;
     NSDateFormatter *dateFormatter;
     NSString *updatedInfoText;
+    UIAlertView *dateAlert;
     
     
     
