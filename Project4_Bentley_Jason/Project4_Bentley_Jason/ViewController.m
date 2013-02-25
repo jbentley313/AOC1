@@ -66,7 +66,7 @@
     }
     
  
-    //Username display and info label
+    //Username display and Info label
     usernameDisplay = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 85.0f, 320.0f, 75.0f)];
     if (usernameDisplay != nil) {
             usernameDisplay.text = @"Please Enter Username";
