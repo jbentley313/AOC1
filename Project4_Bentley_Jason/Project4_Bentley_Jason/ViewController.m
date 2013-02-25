@@ -51,7 +51,6 @@
     if (dateButton != nil) {
         dateButton.tag = DateButton;
         dateButton.frame = CGRectMake(10.0f, 200.0f, 90.0f, 35.0f);
-//        [dateButton setBackgroundColor:[UIColor colorWithRed:0.027 green:0.447 blue:0.631 alpha:1]];
         [dateButton setTitle:@"Show Date" forState:UIControlStateNormal];
         [dateButton addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:dateButton];

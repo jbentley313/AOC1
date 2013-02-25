@@ -28,6 +28,9 @@
     
     
     
+    
 }
+
+- (void)onClick:(UIButton*)clickedButton;
 
 @end
