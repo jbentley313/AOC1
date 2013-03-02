@@ -33,6 +33,7 @@
     usernameTextField = [[UITextField alloc] initWithFrame:CGRectMake(100.0f, 10.0f, 210.0f, 25.0f)];
     if (usernameTextField != nil) {
         usernameTextField.borderStyle = UITextBorderStyleRoundedRect;
+        usernameTextField.clearButtonMode = UITextFieldViewModeAlways;
         [self.view addSubview:usernameTextField];
     }
     

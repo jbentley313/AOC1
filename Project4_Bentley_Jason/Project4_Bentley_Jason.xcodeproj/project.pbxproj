@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BBAD4D2916D7F002009AC2CF /* Project4_Bentley_Jason.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project4_Bentley_Jason.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBAD4D2916D7F002009AC2CF /* Simple Log.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Log.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBAD4D2C16D7F002009AC2CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BBAD4D2E16D7F002009AC2CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BBAD4D3016D7F002009AC2CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,7 +65,7 @@
 		BBAD4D2A16D7F002009AC2CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BBAD4D2916D7F002009AC2CF /* Project4_Bentley_Jason.app */,
+				BBAD4D2916D7F002009AC2CF /* Simple Log.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,9 +110,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BBAD4D2816D7F002009AC2CF /* Project4_Bentley_Jason */ = {
+		BBAD4D2816D7F002009AC2CF /* Simple Log */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BBAD4D4C16D7F002009AC2CF /* Build configuration list for PBXNativeTarget "Project4_Bentley_Jason" */;
+			buildConfigurationList = BBAD4D4C16D7F002009AC2CF /* Build configuration list for PBXNativeTarget "Simple Log" */;
 			buildPhases = (
 				BBAD4D2516D7F002009AC2CF /* Sources */,
 				BBAD4D2616D7F002009AC2CF /* Frameworks */,
@@ -122,9 +122,9 @@
 			);
 			dependencies = (
 			);
-			name = Project4_Bentley_Jason;
+			name = "Simple Log";
 			productName = Project4_Bentley_Jason;
-			productReference = BBAD4D2916D7F002009AC2CF /* Project4_Bentley_Jason.app */;
+			productReference = BBAD4D2916D7F002009AC2CF /* Simple Log.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -148,7 +148,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BBAD4D2816D7F002009AC2CF /* Project4_Bentley_Jason */,
+				BBAD4D2816D7F002009AC2CF /* Simple Log */,
 			);
 		};
 /* End PBXProject section */
@@ -293,7 +293,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BBAD4D4C16D7F002009AC2CF /* Build configuration list for PBXNativeTarget "Project4_Bentley_Jason" */ = {
+		BBAD4D4C16D7F002009AC2CF /* Build configuration list for PBXNativeTarget "Simple Log" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BBAD4D4D16D7F002009AC2CF /* Debug */,
